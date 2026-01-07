@@ -1,9 +1,9 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>נתיב הדיגיטל 2026 | מכללת WakeUp</title>
+    <title>המדריך לדיגיטל 2026 | מכללת WakeUp</title>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <script>
@@ -19,51 +19,38 @@
     fbq('track', 'PageView');
     </script>
     <style>
-        :root { --primary: #00f2fe; --secondary: #4facfe; --accent: #ffcc00; --bg: #050505; }
-        * { box-sizing: border-box; }
-        body { margin: 0; font-family: 'Heebo', sans-serif; background-color: var(--bg); color: #fff; display: flex; align-items: center; justify-content: center; min-height: 100vh; overflow-x: hidden; background-image: radial-gradient(circle at 20% 30%, #1a1a1a 0%, #050505 100%); }
-        
-        .card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); border-radius: 40px; padding: 60px 40px; width: 90%; max-width: 550px; text-align: center; box-shadow: 0 40px 100px rgba(0,0,0,0.8); animation: fadeIn 1.2s ease-out; }
-        
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        
-        .brand { font-weight: 300; letter-spacing: 4px; color: var(--secondary); text-transform: uppercase; font-size: 0.9rem; margin-bottom: 20px; display: block; }
-        
-        h1 { font-size: 3.5rem; font-weight: 900; line-height: 1; margin: 0 0 25px 0; background: linear-gradient(to bottom, #fff, #888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        
-        .benefit-list { list-style: none; padding: 0; margin: 30px 0; text-align: right; display: inline-block; }
-        .benefit-list li { margin: 15px 0; font-size: 1.1rem; display: flex; align-items: center; gap: 12px; color: #ccc; }
-        .benefit-list li::before { content: '✓'; color: var(--primary); font-weight: 900; font-size: 1.3rem; }
-        
-        .cta-btn { display: block; background: linear-gradient(45deg, var(--secondary), var(--primary)); color: #000; padding: 25px; font-size: 1.8rem; font-weight: 900; text-decoration: none; border-radius: 20px; margin-top: 20px; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); position: relative; animation: pulse 2s infinite; }
-        
-        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(0, 242, 254, 0.4); } 70% { box-shadow: 0 0 0 20px rgba(0, 242, 254, 0); } 100% { box-shadow: 0 0 0 0 rgba(0, 242, 254, 0); } }
-        
-        .cta-btn:hover { transform: scale(1.05); filter: brightness(1.1); }
-        
-        .footer-info { margin-top: 40px; font-size: 0.9rem; color: #555; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px; }
+        :root { --main: #2563eb; --accent: #0ea5e9; --text: #1e293b; --bg: #f8fafc; }
+        body { margin: 0; font-family: 'Heebo', sans-serif; background-color: var(--bg); color: var(--text); display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+        .wrapper { background: white; border-radius: 24px; padding: 50px 30px; width: 90%; max-width: 500px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+        .logo-text { color: var(--main); font-weight: 900; font-size: 1.2rem; letter-spacing: 1px; margin-bottom: 30px; display: block; }
+        h1 { font-size: 2.8rem; font-weight: 900; line-height: 1.2; margin: 0 0 20px 0; color: #0f172a; }
+        h1 span { color: var(--main); }
+        .bullets { text-align: right; display: inline-block; margin-bottom: 35px; }
+        .bullets div { margin: 12px 0; font-size: 1.1rem; display: flex; align-items: center; gap: 10px; }
+        .bullets div::before { content: '✔️'; font-size: 0.9rem; }
+        .main-btn { display: block; background: linear-gradient(to right, var(--main), var(--accent)); color: white; padding: 22px; font-size: 1.6rem; font-weight: 800; text-decoration: none; border-radius: 16px; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2); }
+        .main-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3); }
+        .security { margin-top: 25px; font-size: 0.85rem; color: #64748b; font-weight: 400; }
     </style>
 </head>
 <body>
-
-    <div class="card">
-        <span class="brand">WAKEUP DIGITAL ACADEMY</span>
-        <h1>הכסף שלך ב-2026.</h1>
+    <div class="wrapper">
+        <span class="logo-text">WAKEUP ACADEMY</span>
+        <h1>הדרך שלך לעצמאות <span>דיגיטלית</span></h1>
         
-        <ul class="benefit-list">
-            <li>7 מקצועות דיגיטליים שניתן לעשות מהבית</li>
-            <li>בניית עסק שמכניס כסף גם כשאת בחופשה</li>
-            <li>ללא צורך בניסיון קודם או תואר אקדמי</li>
-        </ul>
+        <div class="bullets">
+            <div>איך לייצר הכנסה נוספת מהבית ב-2026</div>
+            <div>7 המקצועות הכי מבוקשים כרגע בשוק</div>
+            <div>ללא ניסיון קודם וללא תואר - פשוט להתחיל</div>
+        </div>
 
-        <a href="https://go.scrmgo.com/258PB1PM/2NL53HT/" class="cta-btn" onclick="fbq('track', 'Lead');">
-            הורידו את המדריך עכשיו >>
+        <a href="https://go.scrmgo.com/258PB1PM/2NL53HT/" class="main-btn" onclick="fbq('track', 'Lead');">
+            הורידו את המדריך בחינם >>
         </a>
 
-        <div class="footer-info">
-            🔒 הגישה למדריך מאובטחת וניתנת בחינם לזמן מוגבל
+        <div class="security">
+            🔒 המדריך יישלח אליך באופן מאובטח ומיידי
         </div>
     </div>
-
 </body>
 </html>
