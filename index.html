@@ -11,7 +11,7 @@
         h1 { color: #2c3e50; font-size: 28px; margin-bottom: 20px; }
         p { color: #7f8c8d; font-size: 18px; line-height: 1.6; }
         .highlight { color: #e74c3c; font-weight: bold; }
-        .btn { display: inline-block; background: #27ae60; color: white; padding: 15px 40px; font-size: 20px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 30px; transition: transform 0.2s; cursor: pointer; border: none; }
+        .btn { display: inline-block; background: #27ae60; color: white; padding: 15px 40px; font-size: 20px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 30px; transition: transform 0.2s; cursor: pointer; border: none; width: 100%; box-sizing: border-box; }
         .btn:hover { transform: scale(1.05); background: #219150; }
         .footer { margin-top: 20px; font-size: 12px; color: #bdc3c7; }
     </style>
@@ -34,7 +34,7 @@
 <div class="container">
     <h1>איך לייצר הכנסה בדיגיטל ב-2026? 🚀</h1>
     <p>גלי את 7 המקצועות הרווחיים ביותר שמאפשרים לך לעבוד מכל מקום בעולם, גם <span class="highlight">בלי ניסיון קודם</span>.</p>
-    <p>המדריך המלא מחכה לך כאן בחינם!</p>
+    <p>המדריך המלא מחכה לך כאן להורדה בחינם!</p>
     
     <button class="btn" onclick="trackDownload()">לחצי כאן להורדת המדריך בחינם</button>
 
@@ -43,12 +43,11 @@
 
 <script>
     function trackDownload() {
-        // דיווח לפייסבוק על "ליד" (הורדה)
+        // דיווח לפייסבוק על ליד
         fbq('track', 'Lead');
         
-        // כאן אנחנו שמים את הלינק למדריך שלך (PDF או קובץ אחר)
-        // כרגע נחבר את זה להצעה של CapCut מ-Impact כהתחלה
-        window.location.href = "https://capcut.afp.impactradius.com/your-direct-link-here"; 
+        // כאן נשים את הקישור למדריך ה-PDF שכתבת
+        alert("המדריך נשלח להורדה! (כאן נשים את הקישור הישיר לקובץ שלך)");
     }
 </script>
 
