@@ -17,7 +17,20 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1058223969300643');
     fbq('track', 'PageView');
+
+    // פונקציית הליד - מופעלת רק בלחיצה
+    function handleCtaClick(e) {
+        fbq('track', 'Lead');
+        // נותן לפיקסל חצי שנייה "לירות" לפני שהדף עובר לקישור
+        setTimeout(function() {
+            window.location.href = e.target.href;
+        }, 500);
+        return false;
+    }
     </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1058223969300643&ev=PageView&noscript=1"
+    /></noscript>
     <style>
         body { font-family: 'Assistant', sans-serif; background: #f0f4f8; margin: 0; padding: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; color: #333; }
         .container { background: white; padding: 40px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); max-width: 500px; width: 90%; border-top: 8px solid #007bff; }
@@ -38,17 +51,4 @@
     
     <ul class="benefits">
         <li>בלי בוס על הראש</li>
-        <li>בלי להחתים כרטיס במשרד</li>
-        <li>גם בלי ניסיון קודם בדיגיטל</li>
-        <li>מתאים במיוחד לאמהות ונוודים</li>
-    </ul>
-    
-    <p>הצטרפי לאלפי האנשים שכבר קיבלו את "כרטיס הכניסה" שלהם לעולם החדש.</p>
-
-    <a href="https://go.scrmgo.com/258PB1PM/2NL53HT/" class="btn" onclick="fbq('track', 'Lead');">לחצי כאן להורדת המדריך בחינם!</a>
-
-    <div class="footer">בשיתוף מכללת WakeUp | Success Digital &copy; 2026</div>
-</div>
-
-</body>
-</html>
+        <li>
