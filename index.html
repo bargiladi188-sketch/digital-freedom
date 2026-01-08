@@ -10,8 +10,9 @@
         .container { background: white; padding: 40px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); max-width: 500px; width: 90%; border-top: 8px solid #007bff; }
         h1 { color: #1a202c; font-size: 30px; margin-bottom: 15px; font-weight: 700; line-height: 1.2; }
         h2 { color: #2d3748; font-size: 20px; margin-bottom: 25px; font-weight: 400; }
-        .benefits { text-align: right; margin-bottom: 30px; padding-right: 20px; }
-        .benefits li { margin-bottom: 10px; font-size: 17px; list-style-type: '✅'; padding-right: 10px; }
+        .benefits { text-align: right; margin-bottom: 30px; padding-right: 20px; list-style: none; }
+        .benefits li { margin-bottom: 10px; font-size: 17px; position: relative; padding-right: 25px; }
+        .benefits li::before { content: '✅'; position: absolute; right: 0; }
         .highlight { color: #007bff; font-weight: bold; }
         .btn { display: inline-block; background: #28a745; color: white; padding: 20px 40px; font-size: 22px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 10px; transition: all 0.3s; cursor: pointer; border: none; width: 100%; box-sizing: border-box; box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4); }
         .btn:hover { transform: translateY(-3px); background: #218838; box-shadow: 0 8px 20px rgba(40, 167, 69, 0.5); }
@@ -40,16 +41,3 @@
     <ul class="benefits">
         <li>בלי בוס על הראש</li>
         <li>בלי להחתים כרטיס במשרד</li>
-        <li>גם <span class="highlight">בלי ניסיון קודם</span> בדיגיטל</li>
-        <li>מתאים במיוחד לאמהות ונוודים</li>
-    </ul>
-    
-    <p>הצטרפי לאלפי האנשים שכבר קיבלו את "כרטיס הכניסה" שלהם לעולם החדש.</p>
-
-    <a href="https://go.scrmgo.com/258PB1PM/2NL53HT/" class="btn" onclick="fbq('track', 'Lead');">לחצי כאן להורדת המדריך בחינם!</a>
-
-    <div class="footer">בשיתוף מכללת WakeUp | Success Digital &copy;</div>
-</div>
-
-</body>
-</html>
