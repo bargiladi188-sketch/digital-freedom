@@ -17,16 +17,6 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1058223969300643');
     fbq('track', 'PageView');
-
-    // פונקציית הליד - מופעלת רק בלחיצה
-    function handleCtaClick(e) {
-        fbq('track', 'Lead');
-        // נותן לפיקסל חצי שנייה "לירות" לפני שהדף עובר לקישור
-        setTimeout(function() {
-            window.location.href = e.target.href;
-        }, 500);
-        return false;
-    }
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1058223969300643&ev=PageView&noscript=1"
@@ -39,7 +29,8 @@
         .benefits { text-align: right; margin-bottom: 30px; padding-right: 20px; list-style: none; }
         .benefits li { margin-bottom: 10px; font-size: 17px; position: relative; padding-right: 25px; }
         .benefits li::before { content: '✅'; position: absolute; right: 0; }
-        .btn { display: inline-block; background: #28a745; color: white !important; padding: 20px 40px; font-size: 22px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 10px; width: 100%; box-sizing: border-box; box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4); border: none; cursor: pointer; }
+        .btn { display: inline-block; background: #28a745; color: white !important; padding: 20px 40px; font-size: 22px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 10px; width: 100%; box-sizing: border-box; box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4); border: none; cursor: pointer; transition: 0.3s; }
+        .btn:hover { background: #218838; transform: translateY(-2px); }
         .footer { margin-top: 25px; font-size: 13px; color: #a0aec0; }
     </style>
 </head>
@@ -51,4 +42,9 @@
     
     <ul class="benefits">
         <li>בלי בוס על הראש</li>
-        <li>
+        <li>בלי להחתים כרטיס במשרד</li>
+        <li>גם בלי ניסיון קודם בדיגיטל</li>
+        <li>מתאים במיוחד לאמהות ונוודים</li>
+    </ul>
+    
+    <p>הצטרפי לאלפי האנשים שכבר קיבלו את "כרטיס הכניסה" שלהם לעולם החדש.</p>
